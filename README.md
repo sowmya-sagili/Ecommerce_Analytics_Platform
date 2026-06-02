@@ -213,7 +213,7 @@ pip install -r requirements.txt
 ### Option 1: Run Full Pipeline (Recommended)
 
 ```bash
-python main.py
+python3.11 main.py
 ```
 
 This single command executes all 8 pipeline steps and generates every output file.
