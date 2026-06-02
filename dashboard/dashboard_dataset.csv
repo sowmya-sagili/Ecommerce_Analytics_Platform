@@ -1,0 +1,82 @@
+Period,Metric,Value,Category
+2022-01,Monthly Revenue,16027.66,Revenue
+2022-02,Monthly Revenue,16871.19,Revenue
+2022-03,Monthly Revenue,19436.47,Revenue
+2022-04,Monthly Revenue,17339.79,Revenue
+2022-05,Monthly Revenue,17290.02,Revenue
+2022-06,Monthly Revenue,17399.66,Revenue
+2022-07,Monthly Revenue,15958.98,Revenue
+2022-08,Monthly Revenue,14536.56,Revenue
+2022-09,Monthly Revenue,16379.57,Revenue
+2022-10,Monthly Revenue,48330.09,Revenue
+2022-11,Monthly Revenue,52543.31,Revenue
+2022-12,Monthly Revenue,48959.55,Revenue
+2023-01,Monthly Revenue,19948.81,Revenue
+2023-02,Monthly Revenue,15860.29,Revenue
+2023-03,Monthly Revenue,17151.28,Revenue
+2023-04,Monthly Revenue,19273.45,Revenue
+2023-05,Monthly Revenue,15544.98,Revenue
+2023-06,Monthly Revenue,19027.42,Revenue
+2023-07,Monthly Revenue,14970.64,Revenue
+2023-08,Monthly Revenue,18034.43,Revenue
+2023-09,Monthly Revenue,15182.36,Revenue
+2023-10,Monthly Revenue,49407.18,Revenue
+2023-11,Monthly Revenue,46941.11,Revenue
+2023-12,Monthly Revenue,46385.06,Revenue
+ALL,Total Revenue,598799.86,Revenue
+ALL,Avg Monthly Growth %,15.17,Revenue
+ALL,Total Customers,1499.0,Customer
+ALL,Total Orders,3748.0,Customer
+ALL,Avg Order Value,159.77,Customer
+ALL,Revenue per Customer,399.47,Customer
+ALL,Repeat Purchase Rate %,97.93,Customer
+ALL,Customer Retention Rate %,94.17,Customer
+ALL,Segment: Champions,359.0,Customer
+ALL,Segment: Potential Loyalists,322.0,Customer
+ALL,Segment: Lost Customers,286.0,Customer
+ALL,Segment: Loyal Customers,284.0,Customer
+ALL,Segment: At Risk,248.0,Customer
+ALL,Product Revenue: WOOD S/3 CABINET ANT WHITE,81212.98,Product
+ALL,Product Revenue: REGENCY CAKESTAND 3 TIER,60009.14,Product
+ALL,Product Revenue: VICTORIAN SEWING BOX LARGE,43284.64,Product
+ALL,Product Revenue: SCOTTIE DOG HOT WATER BOTTLE,25384.0,Product
+ALL,Product Revenue: SET OF 3 CAKE TINS PANTRY DESIGN,24355.12,Product
+ALL,Product Revenue: PARTY BUNTING,24152.27,Product
+ALL,Product Revenue: HOT WATER BOTTLE KEEP CALM,22107.11,Product
+ALL,Product Revenue: Unknown Product,19907.84,Product
+ALL,Product Revenue: ALARM CLOCK BAKELIKE RED,18570.56,Product
+ALL,Product Revenue: KNITTED UNION FLAG HOT WATER BOTTLE,16010.42,Product
+ALL,Product Revenue: SET 2 TEA TOWELS I LOVE LONDON,14504.31,Product
+ALL,Product Revenue: PAPER CHAIN KIT CHRISTMAS DECORATIONS,14096.99,Product
+ALL,Product Revenue: CREAM CUPID HEARTS COAT HANGER,13804.51,Product
+ALL,Product Revenue: LUNCH BOX WITH CUTLERY RETROSPOT,13768.41,Product
+ALL,Product Revenue: WHITE HANGING HEART T-LIGHT HOLDER,13265.53,Product
+ALL,Product Revenue: SPACESHIP LAMP,12183.0,Product
+ALL,Product Revenue: HAND WARMER RED POLKA DOT,11764.54,Product
+ALL,Product Revenue: SPACEBOY LUNCH BOX,11401.21,Product
+ALL,Product Revenue: GIN + TONIC DIET METAL SIGN,11191.25,Product
+ALL,Product Revenue: JUMBO STORAGE BAG SUKI,10029.29,Product
+ALL,Country Revenue: United Kingdom,238446.68,Geography
+ALL,Country Revenue: Germany,47012.41,Geography
+ALL,Country Revenue: France,41101.53,Geography
+ALL,Country Revenue: Netherlands,29240.45,Geography
+ALL,Country Revenue: Spain,27419.87,Geography
+ALL,Country Revenue: Australia,27107.91,Geography
+ALL,Country Revenue: Switzerland,22569.0,Geography
+ALL,Country Revenue: Japan,19808.77,Geography
+ALL,Country Revenue: Belgium,19529.98,Geography
+ALL,Country Revenue: Norway,19282.21,Geography
+ALL,Country Revenue: Sweden,18273.96,Geography
+ALL,Country Revenue: USA,17897.38,Geography
+ALL,Country Revenue: Portugal,14484.89,Geography
+ALL,Country Revenue: Singapore,12876.09,Geography
+ALL,Country Revenue: Canada,11438.07,Geography
+ALL,Country Revenue: Finland,11379.72,Geography
+ALL,Country Revenue: Italy,11325.75,Geography
+ALL,Country Revenue: Denmark,9605.19,Geography
+2024-01,Forecast Revenue,19577.15,Forecast
+2024-02,Forecast Revenue,19699.76,Forecast
+2024-03,Forecast Revenue,16618.66,Forecast
+2024-04,Forecast Revenue,23529.88,Forecast
+2024-05,Forecast Revenue,17205.12,Forecast
+2024-06,Forecast Revenue,11709.56,Forecast

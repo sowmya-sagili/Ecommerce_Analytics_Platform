@@ -1,0 +1,161 @@
+11:58:40 [INFO] ============================================================
+11:58:40 [INFO]   E-COMMERCE ANALYTICS PLATFORM — PIPELINE START
+11:58:40 [INFO]   2026-06-02 11:58:40
+11:58:40 [INFO] ============================================================
+11:58:40 [INFO] ------------------------------------------------------------
+11:58:40 [INFO]   STEP: Generate Synthetic Dataset
+11:58:40 [INFO] ------------------------------------------------------------
+11:58:41 [INFO] Raw dataset already exists (D:\Ecommerce_Analytics_Platform\data\raw\ecommerce_data.csv). Skipping generation.
+11:58:41 [INFO]   Done in 0.5s
+11:58:41 [INFO] ------------------------------------------------------------
+11:58:41 [INFO]   STEP: Data Cleaning & Feature Engineering
+11:58:41 [INFO] ------------------------------------------------------------
+11:58:41 [INFO] Loading raw data from: D:\Ecommerce_Analytics_Platform\data\raw\ecommerce_data.csv
+11:58:41 [INFO] Raw shape: (10300, 8)
+11:58:41 [INFO] --- RAW Quality Report ---
+11:58:41 [INFO]   Shape          : (10300, 8)
+11:58:41 [INFO]   Null values    : 1131
+11:58:41 [INFO]   Duplicates     : 300
+11:58:41 [INFO]   Neg quantities : 407
+11:58:41 [INFO]   Invalid prices : 208
+11:58:41 [INFO] Removed 300 duplicate rows.
+11:58:41 [INFO] Filled 300 missing Descriptions with 'Unknown Product'.
+11:58:41 [INFO] Removed 800 rows with missing CustomerID.
+11:58:41 [INFO] Removed 183 rows with invalid UnitPrice (≤ 0).
+11:58:41 [INFO] Removed 376 rows with negative/zero Quantity.
+11:58:41 [INFO] Removed 186 cancelled invoice rows.
+11:58:41 [INFO] Engineering features...
+11:58:41 [INFO] Features created: Revenue, OrderYear, OrderMonth, OrderDay, OrderDayOfWeek, YearMonth
+11:58:41 [INFO] --- CLEANED Quality Report ---
+11:58:41 [INFO]   Shape          : (8455, 14)
+11:58:41 [INFO]   Null values    : 0
+11:58:41 [INFO]   Duplicates     : 0
+11:58:41 [INFO]   Neg quantities : 0
+11:58:41 [INFO]   Invalid prices : 0
+11:58:41 [INFO] Cleaned dataset saved → D:\Ecommerce_Analytics_Platform\data\processed\cleaned_data.csv
+11:58:41 [INFO] Building customer-level summary...
+11:58:41 [INFO] Customer summary shape: (1499, 9)
+11:58:41 [INFO] Customer summary saved → D:\Ecommerce_Analytics_Platform\data\processed\customer_summary.csv
+11:58:41 [INFO]   Done in 0.2s
+11:58:41 [INFO] ------------------------------------------------------------
+11:58:41 [INFO]   STEP: KPI Analysis
+11:58:41 [INFO] ------------------------------------------------------------
+11:58:41 [INFO] Computing KPIs...
+11:58:41 [INFO] Total Revenue         : £598,799.86
+11:58:41 [INFO] Total Orders          : 3,748
+11:58:41 [INFO] Total Customers       : 1,499
+11:58:41 [INFO] Avg Order Value       : £159.77
+11:58:41 [INFO] Revenue per Customer  : £399.47
+11:58:41 [INFO] Repeat Purchase Rate  : 97.93%
+11:58:41 [INFO] Customer Retention    : 94.17%
+11:58:41 [INFO] Avg Monthly Growth    : 15.17%
+11:58:41 [INFO] KPIs saved → D:\Ecommerce_Analytics_Platform\data\processed\kpis.json
+11:58:41 [INFO] KPIs saved → D:\Ecommerce_Analytics_Platform\data\processed\kpis.csv
+11:58:41 [INFO]   Done in 0.0s
+11:58:41 [INFO] ------------------------------------------------------------
+11:58:41 [INFO]   STEP: Exploratory Data Analysis (7 Charts)
+11:58:41 [INFO] ------------------------------------------------------------
+11:58:42 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:42 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:42 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:42 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:42 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:42 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\01_monthly_revenue_trend.png
+11:58:43 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\02_top_20_products.png
+11:58:43 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\03_revenue_by_country.png
+11:58:43 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\04_customer_purchase_distribution.png
+11:58:43 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\05_revenue_distribution.png
+11:58:43 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\06_correlation_heatmap.png
+11:58:43 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:43 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:44 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\07_revenue_growth_rate.png
+11:58:44 [INFO] Generated 7 EDA charts.
+11:58:44 [INFO] Generated 7 EDA charts.
+11:58:44 [INFO]   Done in 2.6s
+11:58:44 [INFO] ------------------------------------------------------------
+11:58:44 [INFO]   STEP: Customer Segmentation (RFM)
+11:58:44 [INFO] ------------------------------------------------------------
+11:58:44 [INFO] RFM snapshot date: 2024-01-01
+11:58:44 [INFO] RFM table shape: (1499, 4)
+11:58:44 [INFO]   Champions             :   359 customers (23.9%)
+11:58:44 [INFO]   Potential Loyalists   :   322 customers (21.5%)
+11:58:44 [INFO]   Lost Customers        :   286 customers (19.1%)
+11:58:44 [INFO]   Loyal Customers       :   284 customers (18.9%)
+11:58:44 [INFO]   At Risk               :   248 customers (16.5%)
+11:58:44 [INFO] Segmentation results saved → D:\Ecommerce_Analytics_Platform\data\processed\rfm_segments.csv
+11:58:44 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\rfm_segment_distribution.png
+11:58:44 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\rfm_scatter.png
+11:58:45 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\rfm_boxplots.png
+11:58:45 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\rfm_segment_revenue.png
+11:58:45 [INFO] Segmented 1,499 customers into 5 RFM groups.
+11:58:45 [INFO]   Done in 1.1s
+11:58:45 [INFO] ------------------------------------------------------------
+11:58:45 [INFO]   STEP: Revenue Forecasting
+11:58:45 [INFO] ------------------------------------------------------------
+11:58:45 [INFO] Monthly revenue series: 24 periods
+11:58:45 [INFO] Linear Regression model trained.
+11:58:45 [INFO] MAE  : £5,206.12
+11:58:45 [INFO] MSE  : 37,131,007.72
+11:58:45 [INFO] RMSE : £6,093.52
+11:58:45 [INFO] R²   : 0.84
+11:58:45 [INFO] Forecast results saved → D:\Ecommerce_Analytics_Platform\data\processed\forecast_results.csv
+11:58:45 [INFO] Metrics saved → D:\Ecommerce_Analytics_Platform\data\processed\forecast_metrics.json
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\actual_vs_predicted.png
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+11:58:45 [INFO] Saved: D:\Ecommerce_Analytics_Platform\visualizations\revenue_forecast.png
+11:58:45 [INFO] Forecast metrics: MAE=5206.12, R²=0.84
+11:58:45 [INFO]   Done in 0.8s
+11:58:45 [INFO] ------------------------------------------------------------
+11:58:45 [INFO]   STEP: Dashboard Dataset Export
+11:58:45 [INFO] ------------------------------------------------------------
+11:58:46 [INFO] Dashboard dataset saved (81 rows) → D:\Ecommerce_Analytics_Platform\dashboard\dashboard_dataset.csv
+11:58:46 [INFO] SQLite: transactions table loaded.
+11:58:46 [INFO] SQLite: rfm_segments table loaded.
+11:58:46 [INFO] SQLite: customer_summary table loaded.
+11:58:46 [INFO] SQLite database created → D:\Ecommerce_Analytics_Platform\data\processed\ecommerce.db
+11:58:46 [INFO] Dashboard dataset exported → D:\Ecommerce_Analytics_Platform\dashboard\dashboard_dataset.csv
+11:58:46 [INFO]   Done in 0.2s
+11:58:46 [INFO] ------------------------------------------------------------
+11:58:46 [INFO]   STEP: Business Insights Report
+11:58:46 [INFO] ------------------------------------------------------------
+11:58:46 [INFO] Business report saved → D:\Ecommerce_Analytics_Platform\reports\business_report.md
+11:58:46 [INFO] Report generated → D:\Ecommerce_Analytics_Platform\reports\business_report.md
+11:58:46 [INFO]   Done in 0.0s
+11:58:46 [INFO] ============================================================
+11:58:46 [INFO]   PIPELINE COMPLETE in 5.5s
+11:58:46 [INFO] 
+11:58:46 [INFO]   Key Results:
+11:58:46 [INFO]     Total Revenue     :     598,799.86
+11:58:46 [INFO]     Total Orders      :          3,748
+11:58:46 [INFO]     Total Customers   :          1,499
+11:58:46 [INFO]     Avg Order Value   :         159.77
+11:58:46 [INFO]     Repeat Purchase % :          97.9%
+11:58:46 [INFO]     Forecast R2       :         0.8400
+11:58:46 [INFO] 
+11:58:46 [INFO]   Output Files:
+11:58:46 [INFO]     data/processed/cleaned_data.csv
+11:58:46 [INFO]     data/processed/rfm_segments.csv
+11:58:46 [INFO]     data/processed/forecast_results.csv
+11:58:46 [INFO]     data/processed/ecommerce.db
+11:58:46 [INFO]     visualizations/  (11 PNG charts)
+11:58:46 [INFO]     dashboard/dashboard_dataset.csv
+11:58:46 [INFO]     reports/business_report.md
+11:58:46 [INFO] ============================================================
