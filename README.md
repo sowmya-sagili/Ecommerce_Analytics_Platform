@@ -47,6 +47,17 @@ This platform analyses e-commerce transaction data to deliver:
 **Dataset:** Synthetic 10,000-row e-commerce dataset modelled after the UCI Online Retail dataset, with realistic dirty data injected for cleaning demonstration.
 
 ---
+## Key Results
+
+* Processed 10,300 raw e-commerce transactions
+* Cleaned and validated 8,455 records after removing duplicates and invalid data
+* Generated £598,799.86 in analyzed revenue
+* Identified 1,499 unique customers
+* Achieved 94.17% customer retention rate
+* Achieved 97.93% repeat purchase rate
+* Segmented customers into 5 RFM categories
+* Built a revenue forecasting model with R² = 0.84
+* Generated 11 analytical visualizations and dashboard-ready datasets
 
 ## 🏗️ Architecture
 
@@ -347,13 +358,17 @@ The `dashboard/dashboard_dataset.csv` file is structured for Power BI:
 
 ## 📸 Screenshots
 
-*After running `python main.py`, view charts in `visualizations/`:*
+### Monthly Revenue Trend
+![Monthly Revenue Trend](visualizations/01_monthly_revenue_trend.png)
 
-- `visualizations/01_monthly_revenue_trend.png` — Revenue timeline with moving average
-- `visualizations/rfm_segment_distribution.png` — Customer segment breakdown
-- `visualizations/actual_vs_predicted.png` — ML model fit
-- `visualizations/revenue_forecast.png` — 6-month ahead forecast
+### Customer Segment Distribution
+![Customer Segment Distribution](visualizations/rfm_segment_distribution.png)
 
+### Actual vs Predicted Revenue
+![Actual vs Predicted Revenue](visualizations/actual_vs_predicted.png)
+
+### Revenue Forecast
+![Revenue Forecast](visualizations/revenue_forecast.png)
 ---
 
 ## 🔮 Future Improvements
